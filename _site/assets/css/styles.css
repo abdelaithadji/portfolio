@@ -82,22 +82,27 @@ a:hover { color: #000; }
   .container > header > span { text-indent: 30px; }
   .main section p { padding: 2em 5%; font-size: 1.4em; } }
 
-.cbp-af-header { position: fixed; top: 0; left: 0; width: 100%; background: #282C34; z-index: 10000; height: 230px; overflow: hidden; -webkit-transition: height 0.3s; -moz-transition: height 0.3s; transition: height 0.3s; }
+.cbp-af-header { position: fixed; top: 0; left: 0; width: 100%; background: #000000; z-index: 10000; height: 230px; overflow: hidden; -webkit-transition: height 0.3s; -moz-transition: height 0.3s; transition: height 0.3s; }
 
 .cbp-af-header .cbp-af-inner { width: 90%; max-width: 69em; margin: 0 auto; padding: 0 1.875em; }
 
 .cbp-af-header h1, .cbp-af-header nav { display: inline-block; position: relative; }
 
-/* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
-.cbp-af-header h1, .cbp-af-header nav a { line-height: 230px; }
+.cbp-af-header nav { align-self: end; }
 
-.cbp-af-header h1 .cbp-af-amazigh { font-family: 'Nosifer', cursive; text-transform: uppercase; color: #FFFFFF; letter-spacing: 4px; font-size: 4em; font-weight: 600; margin: 0; }
+.cbp-af-header { display: flex; align-items: center; justify-content: center; }
 
-.cbp-af-header h1 span { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 1em; font-weight: normal; color: #FFFFFF; letter-spacing: 0.1em; }
+.cbp-af-header .cbp-af-logo { max-width: 320px; display: flex; align-items: center; justify-content: center; float: left; font-family: 'Courier Prime', monospace; font-family: 'Share Tech Mono', monospace; }
+
+.cbp-af-header .cbp-af-logo h1 { text-transform: uppercase; color: #FFFFFF; letter-spacing: 4px; font-size: 4em; font-weight: 600; margin: 0; }
+
+.cbp-af-header .cbp-af-logo h1::after { content: ''; display: inline-block; width: 1px; height: 45px; background-color: #FFFFFF; margin-right: 10px; }
+
+.cbp-af-header .cbp-af-logo h2 { font-size: 1em; font-weight: normal; color: #FFFFFF; letter-spacing: 0.1em; line-height: 20px; }
 
 .cbp-af-header nav { float: right; }
 
-.cbp-af-header nav a { color: #FFFFFF; margin: 0 0 0 20px; font-size: 18px; }
+.cbp-af-header nav a { font-family: 'Courier Prime', monospace; font-family: 'Share Tech Mono', monospace; color: #FFFFFF; margin: 0 0 0 20px; font-size: 14px; letter-spacing: 0.1em; }
 
 .cbp-af-header nav a:hover { color: #333; }
 
@@ -105,10 +110,6 @@ a:hover { color: #000; }
 .cbp-af-header h1, .cbp-af-header nav a { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 
 .cbp-af-header.cbp-af-header-shrink { height: 90px; }
-
-.cbp-af-header.cbp-af-header-shrink h1, .cbp-af-header.cbp-af-header-shrink nav a { line-height: 90px; }
-
-.cbp-af-header.cbp-af-header-shrink h1 { font-size: 2em; }
 
 /* Example Media Queries */
 @media screen and (max-width: 55em) { .cbp-af-header .cbp-af-inner { width: 100%; }
