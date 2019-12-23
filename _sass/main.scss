@@ -1,13 +1,16 @@
-// BASE
-@import 'utils/sass-utils';
 
 // BASE
 @import 'base/reset';
+
+// ABSTRACTS
+@import 'abstracts/variables';
+
+// UTILS
+@import 'utils/sass-utils';
 
 // LAYOUT
 @import 'layout/header';
 @import 'layout/footer';
 
-
 // PAGES
-@import 'page/home';
+@import 'pages/home';
