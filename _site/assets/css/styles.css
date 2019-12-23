@@ -120,5 +120,3 @@ a:hover { color: #000; }
 @media screen and (max-width: 32.25em) { .cbp-af-header nav a { font-size: 1em; } }
 
 @media screen and (max-width: 24em) { .cbp-af-header nav a, .cbp-af-header.cbp-af-header-shrink nav a { line-height: 1; } }
-
-/*# sourceMappingURL=styles.css.map */
