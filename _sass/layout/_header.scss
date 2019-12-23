@@ -32,12 +32,24 @@
 }
 
 .cbp-af-header h1 {
-	text-transform: uppercase;
-	color: $col-malibu;
-	letter-spacing: 4px;
-	font-size: 4em;
-	margin: 0;
-	float: left;
+
+    .cbp-af-amazigh {
+        font-family: 'Nosifer', cursive;
+        text-transform: uppercase;
+        color: $col-white;
+        letter-spacing: 4px;
+        font-size: 4em;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    span {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 1em;
+        font-weight: normal;
+        color: $col-white;
+        letter-spacing: 0.1em;
+    }
 }
 
 .cbp-af-header nav {
