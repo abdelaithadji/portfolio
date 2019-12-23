@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: $col-shark;
+	background: $col-black;
 	z-index: 10000;
 	height: 230px;
 	overflow: hidden;
@@ -25,19 +25,50 @@
 	position: relative;
 }
 
- /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
-.cbp-af-header h1,
-.cbp-af-header nav a {
-	line-height: 230px;
+.cbp-af-header nav  {
+	align-self: end;
 }
 
-.cbp-af-header h1 {
-	text-transform: uppercase;
-	color: $col-malibu;
-	letter-spacing: 4px;
-	font-size: 4em;
-	margin: 0;
-	float: left;
+.cbp-af-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cbp-af-logo {
+        max-width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        font-family: 'Courier Prime', monospace;
+        font-family: 'Share Tech Mono', monospace;
+
+        h1 {
+            text-transform: uppercase;
+            color: $col-white;
+            letter-spacing: 4px;
+            font-size: 4em;
+            font-weight: 600;
+            margin: 0;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 1px;
+                height: 45px;
+                background-color: #FFFFFF;
+                margin-right: 10px;
+            }
+        }
+
+        h2 {
+            font-size: 1em;
+            font-weight: normal;
+            color: $col-white;
+            letter-spacing: 0.1em;
+            line-height: 20px;
+        }
+    }
 }
 
 .cbp-af-header nav {
@@ -45,9 +76,12 @@
 }
 
 .cbp-af-header nav a {
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Share Tech Mono', monospace;
 	color: $col-white;
 	margin: 0 0 0 20px;
-	font-size: $font-size-large;
+    font-size: $font-size-base;
+    letter-spacing: 0.1em;
 }
 
 .cbp-af-header nav a:hover {
@@ -64,15 +98,6 @@
 
 .cbp-af-header.cbp-af-header-shrink {
 	height: 90px;
-}
-
-.cbp-af-header.cbp-af-header-shrink h1,
-.cbp-af-header.cbp-af-header-shrink nav a {
-	line-height: 90px;
-}
-
-.cbp-af-header.cbp-af-header-shrink h1 {
-	font-size: 2em;
 }
 
 /* Example Media Queries */
