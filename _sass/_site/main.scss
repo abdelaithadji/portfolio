@@ -1,4 +1,8 @@
-// BASE
+
+// ABSTRACTS
+@import 'abstracts/variables';
+
+// UTILS
 @import 'utils/sass-utils';
 
 // BASE
@@ -8,6 +12,5 @@
 @import 'layout/header';
 @import 'layout/footer';
 
-
 // PAGES
-@import 'page/home';
+@import 'pages/home';
