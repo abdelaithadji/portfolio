@@ -100,7 +100,7 @@ a:hover { color: #000; }
 
 .cbp-af-header .cbp-af-logo h2 { font-size: 1em; font-weight: normal; color: #FFFFFF; letter-spacing: 0.1em; line-height: 20px; }
 
-.cbp-af-header nav a { font-family: 'Courier Prime', monospace; font-family: 'Share Tech Mono', monospace; color: #FFFFFF; margin: 0 0 0 20px; font-size: 14px; letter-spacing: 0.1em; }
+.cbp-af-header nav a { font-family: 'Courier Prime', monospace; font-family: 'Share Tech Mono', monospace; color: #FFFFFF; margin: 0 0 0 20px; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; }
 
 .cbp-af-header nav a:hover { color: #333; }
 

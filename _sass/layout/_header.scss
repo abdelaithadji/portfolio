@@ -81,7 +81,8 @@
 	color: $col-white;
 	margin: 0 0 0 20px;
     font-size: $font-size-base;
-    letter-spacing: 0.1em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 
 .cbp-af-header nav a:hover {
