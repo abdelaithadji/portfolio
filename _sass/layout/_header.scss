@@ -13,10 +13,12 @@
 }
 
 .cbp-af-header .cbp-af-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	width: 90%;
 	max-width: 69em;
 	margin: 0 auto;
-	padding: 0 1.875em;
 }
 
 .cbp-af-header h1,
@@ -26,20 +28,18 @@
 }
 
 .cbp-af-header nav  {
-	align-self: end;
+	justify-content: flex-end;
 }
 
 .cbp-af-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
 
     .cbp-af-logo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
         max-width: 320px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        float: left;
         font-family: 'Courier Prime', monospace;
         font-family: 'Share Tech Mono', monospace;
 
@@ -72,7 +72,7 @@
 }
 
 .cbp-af-header nav {
-	float: right;
+	//float: right;
 }
 
 .cbp-af-header nav a {
@@ -81,7 +81,8 @@
 	color: $col-white;
 	margin: 0 0 0 20px;
     font-size: $font-size-base;
-    letter-spacing: 0.1em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 
 .cbp-af-header nav a:hover {
