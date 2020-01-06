@@ -39,10 +39,14 @@ a:hover {
 
 .container > header,
 .main section > div {
-	width: 90%;
-	max-width: 69em;
+	//width: 90%;
+	//max-width: 69em;
 	margin: 0 auto;
 	padding: 2.875em 1.875em 1.875em;
+}
+
+.container > header {
+	margin-left: 300px;
 }
 
 .container > header h1 {
